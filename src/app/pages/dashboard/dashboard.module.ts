@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 
 import { RouterModule } from '@angular/router';
 
@@ -22,6 +23,7 @@ export const routes = [
   declarations: [DashboardComponent, LoginComponent],
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule.forChild(routes),
   ]
 })
